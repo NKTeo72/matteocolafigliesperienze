@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+	<link href="./Stili/Stile.Css" rel="stylesheet" type="text/css">
+	<TITLE>
+		Javascript - Tipo Array
+	</TITLE>
+	<script language="javascript" type="text/javascript">
+
+		function Caratteri()
+		{
+			var caratteri = new Array(3);
+			caratteri=['a','b','c'];
+			var paragrafo="";
+			for(i=0;i<caratteri.length;i++)
+			{
+				paragrafo=paragrafo+caratteri[i]+" ";
+			}
+			document.getElementById("pOutputCaratteri").innerText=paragrafo;
+		}
+		function Interi()
+		{
+			var interi=new Array(3);
+			interi=[1,2,3];
+			var paragrafo="";
+			for(i=0;i<interi.length;i++)
+			{
+				paragrafo=paragrafo+interi[i]+" ";
+			}
+			document.getElementById("pOutputInteri").innerText=paragrafo;
+		}
+		function Stringhe()
+		{
+			var stringhe = new Array(3);
+			stringhe=["Uno","Due","Tre"];
+			var paragrafo="";
+			for(i=0;i<stringhe.length;i++)
+			{
+				paragrafo=paragrafo+stringhe[i]+"\n";
+			}
+			document.getElementById("pOutputStringhe").innerText=paragrafo;
+		}
+
+	</script>
+
+</HEAD>
+
+<BODY >
+
+	<div id="intestazione" >
+		
+	</div>
+	<div id="divsx">
+		<p>
+			<a href="#">Home</a>
+		</p>
+		
+	</div>
+	<div id="divcx" >
+		<p style="font-size:30px">
+			Javascript - Tipo Array - Home
+		</p>
+		<p style="font-size:18px">
+			
+			<input type="submit" id="button1" name="button1" value="Caratteri" onclick="Caratteri()"/>
+			
+		</p>
+		<p id="pOutputCaratteri" name="pOutputCaratteri">
+		</p>
+		<hr>
+		<p style="font-size:18px">
+			
+			<input type="submit" id="button2" name="button2" value="Interi" onclick="Interi()"/>
+			
+		</p>
+		<p id="pOutputInteri" name="pOutputInteri">
+		</p>
+		<hr>
+		<p style="font-size:18px">
+			
+			<input type="submit" id="button3" name="button3" value="Stringhe" onclick="Stringhe()"/>
+			
+		</p>
+		<p id="pOutputStringhe" name="pOutputStringhe">
+		</p>
+		<hr>
+
+		
+				
+		
+	</div>
+	<div id="divdx">
+		<img src="./Immagini/logo.jpg" style="width:90%;hight:90%"/>
+	</div>
+
+
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+	<link href="./Stili/Stile.Css" rel="stylesheet" type="text/css">
+	<TITLE>
+		Gestione Input_TextButton - Indovina
+	</TITLE>
+	<script language="javascript" type="text/javascript">
+
+		function Addizione()
+		{
+			var n1;
+		    	n1=parseInt(document.getElementById("textbox1").value);
+			var numeroDaIndovinare = Math.floor(Math.random() * 10) + 1;
+			console.log(numeroDaIndovinare);
+			var n = 5;
+
+		
+			if (numeroDaIndovinare ==n1)
+			{
+				document.getElementById("pOutputAddizione").innerText=n1
+			}
+		}	
+			
+			
+		
+
+	</script>
+
+</HEAD>
+
+<BODY >
+
+	<div id="intestazione" >
+		
+	</div>
+	<div id="divsx">
+				<p>
+			<a href="index.Html">Home</a>
+		</p>
+		<p>
+			<a href="Somma.Html">Somma</a>
+		</p>
+		<p>
+			<a href="Indovina.Html">Indovina</a>
+		</p>
+		<p>
+			<a href="QuattroOperazioni.Html">Quattro Operazioni</a>
+		</p>
+		<p>
+			<a href="AreaQuadrato.Html">Area Quadrato</a>
+		</p>
+		<p>
+			<a href="PerimetroTriangolo.Html">Perimetro Triangolo</a>
+		</p>
+		<p>
+			<a href="AreaRettangolo.Html">AreaRettangolo</a>
+		</p>
+		<p>
+			<a href="Statistica.Html">Statistica</a>
+		</p>
+		
+		
+	</div>
+	<div id="divcx" >
+		<p style="font-size:30px">
+			Indovina
+		</p>
+		<p style="font-size:18px">
+			Numero Utente <input type="text" id="textbox1" name="textbox1" /><br>
+			
+			<input type="submit" id="button1" name="button1" value="Risultato" onclick="Addizione()"/>
+			
+		</p>
+		<p id="pOutputAddizione" name="pOutputAddizione">
+		</p>
+		
+				
+		
+	</div>
+	<div id="divdx">
+		<img src="./Immagini/logo.jpg" style="width:200px;hight:150px"/>
+	</div>
+
+
+
+</BODY>
+
+</HTML>

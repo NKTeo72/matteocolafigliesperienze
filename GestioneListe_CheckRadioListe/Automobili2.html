@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+	<link href="./Stili/Stile.Css" rel="stylesheet" type="text/css">
+	<TITLE>
+		 GestioneListe_CheckRadioListe - Automobile 2
+	</TITLE>
+		<script language="javascript" type="text/javascript">	
+		function Automobili()
+			{	
+				var caratteri = new Array(3);
+				caratteri=['Mercedes Classe A Da 27.890.00€, ','BMW Serie 1 Da 28.800,00€, ','Audi A1 Sportback Da 23.050,00€, '];
+				var paragrafo="";
+				for(i=0;i<caratteri.length;i++)
+				{
+					paragrafo=paragrafo+caratteri[i]+" ";
+				}
+				document.getElementById("pOutputAutomobili").innerText=paragrafo;
+			}
+		</script>
+
+
+</HEAD>
+
+<BODY style="font-family:tahoma">
+
+	<div id="intestazione" >
+		
+	</div>
+	<div id="divsx">
+		<p>
+			<a href="index.Html">Home</a>
+		</p>
+		<p>
+			<a href="Automobili.html">Automobili</a>
+		</p>
+		<p>
+			<a href="#">Automobili 2</a>
+		</p>
+		<p>
+			<a href="Conversione.Html">Conversione</a>
+		</p>
+		<p>
+			<a href="Conversione2.Html">Conversione 2</a>
+		</p>
+
+
+	</div>
+	<div id="divcx" >
+		<p style="font-size:30px">
+			Automobile 2
+		</p>
+		<p style="font-size:18px">
+			Marca<input type="checkbox" id="checkbox1" name="checkbox1"/>
+			Modello<input type="checkbox" id="checkbox2" name="checkbox2"/>
+			Prezzo di Automobili<input type="checkbox" id="checkbox3" name="checkbox3"/>
+		</p>
+		<p>
+			<input type="submit" id="button1" name="button1" value="Lista" onclick="Automobili()"/>
+		</p>
+	</div>
+	<div id="divdx">
+		<img src="./Immagini/logo.jpg" style="width:200px;hight:150px"/>
+	</div>
+
+
+
+</BODY>
+
+</HTML>

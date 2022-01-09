@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+	<link href="./Stili/Stile.Css" rel="stylesheet" type="text/css">
+	<TITLE>
+		Javascript - Output Controlli Input
+	</TITLE>
+	<script language="javascript" type="text/javascript">
+		function OutputTotale()
+		{	
+			function Outuput1()
+			{
+				var paragrafo = new String;
+				var stringa;
+				stringa=document.getElementById("textbox1").value;
+				var stringa2;
+				stringa2=document.getElementById("textbox2").value;
+				paragrafo = stringa + "" + stringa2;
+		 		document.getElementById("pOutput1").innerText=paragrafo;
+			}
+			function Output2()
+			{
+				var paragrafo = new String;
+				var nome;
+				nome=document.getElementById("textbox3").value;
+				var email;
+				email = "@gmail.com"
+				paragrafo = nome + email;
+		 		document.getElementById("pOutput2").innerText=paragrafo;	
+			}
+			function Output3()
+			{
+				var password1;
+				var password2;
+				password1 = document.getElementById("textbox4").value;
+				password2= document.getElementById("textbox5").value;
+				if(password1 == password2)
+				{
+					<p>
+						var Paragrafo = new String;
+						paragrafo = "Le Password Corrispondono";
+						document.getElementById("pOutput3").innerText=paragrafo;
+					</p>
+				}
+				else
+				{
+					<p>
+						var Paragrafo = new String;
+						paragrafo = "Attenzione Le Password Non Corrispondono!";
+						document.getElementById("pOutput3").innerText=paragrafo;
+					</p>
+				}
+		
+		       	}
+                     function Output4()
+                     {
+				var paragrafo = new String;
+				var nome;
+				nome=document.getElementById("ztextbox3").value;
+				var anno;
+				anno = document.getElementById("textbox3").value;
+				var mese;
+				mese = document.getElementById("lista1").value;
+				paragrafo = nome + mese + anno;
+		 		document.getElementById("pOutput2").innerText=paragrafo;	
+		     }
+		    function Output5()
+		   {
+			
+		   }
+ 		    function Output6()
+		   {
+			
+		   }
+		   function Output7()
+		   {
+				var paragrafo = new String;
+				var cellulare;
+				cellulare=document.getElementById("textbox1").value;
+				var prefisso;
+				prefisso = document.getElementById("lista1").value;
+				paragrafo = prefisso + cellulare;
+		 		document.getElementById("pOutput2").innerText=paragrafo;
+		   }
+		  function Output8()
+   		  {	
+  		
+
+
+
+
+
+      	         }
+		function Output9()
+		{
+
+		}
+		
+}
+
+			
+	</script>
+
+</HEAD>
+
+<BODY >
+
+	<div id="intestazione" >
+		
+	</div>
+	<div id="divsx">
+		<p>
+			<a href="index.html">Home</a>
+		</p>
+		<p>
+			<a href="#">Dati Anagrafici</a>
+		</p>
+		
+	</div>
+	<div id="divcx" >
+		<p style="font-size:30px">
+			Javascript - Output Controlli Input - Home
+		</p>
+		<p style="font-size:18px">
+			Nome e Cognome<br>
+			Nome <input type="text" id="textbox1" name="textBox1"/>
+			Cognome <input type="text" id="textbox2" name="textBox2"/><br>			
+		</p>
+		
+		<p id="pOutput1">
+
+		</p>
+		<hr>
+		<p style="font-size:18px">
+			Inserire il Proprio Nome Utente<br>
+			Nome Utente <input type="text" id="textbox3" name="textBox3"/><br>			
+		</p>
+		
+		<p id="pOutput2">
+
+		</p>
+		<hr>
+		<p style = "font-size:18px">
+				Inserire la Password
+				Password <input type="text" id="textbox4" name="textBox4"/>
+				Verifica Password <input type="text" id="textbox5" name="textBox5"/><br>	
+		</p>
+				<p id="pOutput3">
+					</p>
+		<hr>
+		<p style = "font-size:18px">
+				Giorno	<input type="text" id="textbox4" name="textBox4"/>
+				Mese    <select id="lista1" name="lista1">
+					<option selected>Mese</option>
+					<option value="Uno">Gennaio</option> 
+					<option value="Due">Febbraio</option> 
+					<option value="Tre">Marzo</option> 
+					<option value="Quattro">Aprile</option> 
+					<option value="Cinque">Maggio</option> 
+					<option value="Sei">Giugno</option> 
+					<option value="Sette">Luglio</option> 
+					<option value="Otto">Agosto</option> 
+					<option value="Nove">Settembre</option> 
+					<option value="Dieci">Ottobre</option> 
+					<option value="Undici">Novembre</option> 
+					<option value="Dodici">Dicembre</option> 
+					</select>
+				Anno <input type="text" id="textbox5" name="textBox5"/><br>	
+		</p>
+				<p id="pOutput4">
+					</p>
+		<hr>
+		<p style = "font-size:18px">
+				Sesso<br>
+				Uomo <input type="radio" id="radio1" name="radio1"/>
+				Donna <input type="radio" id="radio1" name="radio1"/>
+				Preferisco non Specificarlo <input type="radio" id="radio1" name="radio1"/>
+				Personalizzato <input type="radio" id="radio1" name="radio1"/>
+		</p>
+				<p id="pOutput5">
+				</p>
+		<hr>
+		<p style = "font-size:18px">
+				<input type="checkbox" id="checkbox1" name="checkbox1"/>Imposta Google come pagina iniziale predefinita
+		</p>
+				<p id="pOutput6">
+			</p>
+		<hr>
+				<p style = "font-size:18px">
+				Cellulare<br>
+				<select id="lista1" name="lista1">
+					<option selected>Italia</option>
+					<option value="Uno">Inghilterra</option> 
+					<option value="Due">Germania</option> 
+					<option value="Tre">Francia</option> 
+					</select>
+					<input type="text" id="textbox1" name="textBox1"/><br>	
+		</p>
+				<p id="pOutput7">
+					</p>
+		<hr>
+				<p style = "font-size:18px">
+				Paese<br>
+				<select id="lista1" name="lista1">
+					<option selected>Italia</option>
+					<option value="Uno">Inghilterra</option> 
+					<option value="Due">Germania</option> 
+					<option value="Tre">Francia</option> 
+					</select>
+		</p>
+				<p id="pOutput8">
+					</p>
+		<hr>
+		<p>
+			<input type="submit" id="button1" name="button1" value="Passaggio Successivo" onclick="OutputTotale()" />
+		</p>
+	</div>
+	<div id="divdx">
+		<img src="./Immagini/logo.jpg" style="width:90%;hight:90%"/>
+	</div>
+
+
+
+</BODY>
+
+</HTML>

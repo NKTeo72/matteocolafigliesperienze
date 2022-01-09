@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <link href="./Stili/Stile.Css" rel="stylesheet" type="text/css">
+        <TITLE>
+            GestioneInput-Home - Input Output Popup Pulsante
+        </TITLE>
+        <script language="javascript" type="text/javascript">
+            
+            function InputOutput()
+            {
+                var paragrafo= new String;
+                
+                
+    
+                var N1    
+                var N2 
+                var Somma
+                var appoggio
+                N1= parseInt(document.getElementById("textBox1").value);
+                N2= parseInt(document.getElementById("textBox2").value);
+                appoggio=parseInt((N1*N1)+(N2*N2)); 
+                Somma = Math.sqrt(appoggio) + N1 + N2;
+                paragrafo=Somma;
+                document.getElementById("pOutput").innerText=paragrafo;
+                return paragrafo
+            
+            
+                 
+            }
+        </script>
+        
+    </HEAD>
+    
+    <BODY >
+    
+        <div id="intestazione" >
+            
+        </div>
+        <div id="divsx">
+            <p>
+                <a href="index.html">Home</a>
+            </p>
+            <p>
+                <a href="Somma.Html">Somma</a>
+            </p>
+	    <p>
+                <a href="Areaquadrato.Html">Area Quadrato</a>
+            </p>
+		<p>
+                <a href="#">Perimetro Triangolo</a>
+            </p>
+
+            
+        </div>
+        <div id="divcx" >
+            <p style="font-size:30px">
+                Javascript - Input Output Popup Pulsante - Home
+            </p>
+            <p style="font-size:18px">
+                Inserisci in "N1" la base del triangolo e in "N2" l'altezza per calcolare il perimetro
+            </p>
+            <p style="font-size:18px">
+                            N1<input type="text" id="textBox1" name="textBox1"/>
+                        N2<input type="text" id="textBox2" name="textBox2"/>	
+        
+                <hr>
+                Premi per visualizzare l'output su un alert<br>
+                <br>
+                <input type="submit" id="button1" name="button1" value="Premi" onclick="InputOutput()"  />
+                <hr>
+            </p>
+            
+            <p id="pOutput" name="pOutput">
+            
+                
+            </p>
+        </div>
+        <div id="divdx">
+            <img src="./Immagini/5.jpg" style="width:200%;hight:150%"/>
+        </div>
+    
+    
+    
+    </BODY>
+    
+    </BODY>
